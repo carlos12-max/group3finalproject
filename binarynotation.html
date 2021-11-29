@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <title>WEBPAGE</title>
+    <link rel="stylesheet" type="text/css" href="style9.css">
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <header>
+        <a href="aboutus.html" class="logo">Group 3</a>
+        <ul>
+            <li><a href="Webpage.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="concepts.html">Concepts</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+        </ul>
+    </header>
+
+
+    <div class="wrapper">   
+        <h4>BINARY-NOTATION</h4>
+        <br>
+        <div class="features">
+            <figure>
+                  <img alt="andgate" src="binarynotation1.jpg" width="200" height="200" class="images"></figure></div>
+                  <br>
+        <h6>This webpage serves as a Binary calculator by converting base 10 numbers to binary.</h6>
+        <br>
+        <center>
+            <h1>Enter first number:</h1>
+            <input type = "number" id="inputdec1" >
+            <p></p>
+            <br>
+            
+            <h1>Enter second number:</h1>
+            <input type = "number" id="inputdec2" >
+            <p></p>
+            <br>
+            
+            <button onclick="decToBin()">Submit</button>
+            <p></p>
+            <br>
+            <h6>BINARY Values : </h6>
+            <h1 id="demo"></h1>
+            <h1 id="demo2"></h1>
+            <br>
+            <button><a href="projects.html"><h5>Back to Projects</h5></a></button>
+            
+            <script>
+            
+              
+              function decToBin() {
+              var num1 = document.getElementById("inputdec1").value;
+              var res1 = (num1 >>> 0).toString(2);
+              document.getElementById("demo").innerHTML = res1;
+              var num2 = document.getElementById("inputdec2").value;
+              var res2 = (num2 >>> 0).toString(2);
+              document.getElementById("demo2").innerHTML = res2;
+              var ans= +num1 + +num2;
+             
+              }
+              
+            </script>
+</body>
+<footer>
+</footer>
+</html>

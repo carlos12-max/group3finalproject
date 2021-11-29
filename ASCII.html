@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<head>
+    <title>Hex-Binary</title>
+    <link rel="stylesheet" type="text/css" href="style8.css">
+</head>
+<body>
+    <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+
+    <header>
+        <a href="aboutus.html" class="logo">Group 3</a>
+        <ul>
+            <li><a href="Webpage.html">Home</a></li>
+            <li><a href="projects.html" class="active">Projects</a></li>
+            <li><a href="concepts.html">Concepts</a></li>
+            <li><a href="database.html">Database</a></li>
+            <li><a href="documentation.html">Documentation</a></li>
+        </ul>
+    </header>
+
+
+    <div class="wrapper">   
+        <h4>ASCII CONVERTER</h4>
+        <br>
+        <div class="features">
+            <figure>
+                  <img alt="andgate" src="ascii.png" width="550" height="500" class="images"></figure></div>
+                  <br>
+        <h6>This part of the Webpage is for a ASCII Convert</h6>
+        <br>
+        <br>
+        <br>
+        <h1>Enter any number from 0 to 127 : <input id="inputdec" >
+        </h1>
+        
+        <button onclick="decToASCII()"><h1>CONVERT</h1></button>
+        <br><br>
+        <h1>ASCII Value : <h1 id="demo"></h1> </h1>
+        <br>
+        <br>
+        <br>
+        <button><a href="projects.html"><h1>Back to Projects</h1></a></button>
+        
+        
+        <script>
+            function decToASCII() {
+              x = document.getElementById("inputdec").value;
+              var res = String.fromCharCode(x);
+              document.getElementById("demo").innerHTML = res;
+              console.log(res);
+            }
+            </script>
+             
+              
+              
+        
+<footer>
+</footer>
+</html>
